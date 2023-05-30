@@ -167,8 +167,9 @@
   .editor-group-container
   > .title
   .tabs-container {
-  padding: 6px;
-  gap: 6px;
+  padding-top: 1px;
+  padding-left: 1px;
+  gap: 3px;
 }
 .monaco-workbench
   .part.editor
@@ -197,13 +198,4 @@
   background: linear-gradient(#21222c, #21222c) padding-box,
     linear-gradient(45deg, #fcb564, #ff65f2, #d66efd, #6a5af9, #2cccff, #20e3b2)
       border-box;
-}
-.monaco-workbench
-  .part.editor
-  > .content
-  .editor-group-container
-  > .title
-  .tabs-container
-  > .tab {
-  height: 36px !important;
 }
