@@ -1,3 +1,5 @@
+/*--------------------- Custom v1 ---------------------*/
+
 /* :root {
   --size: 5px;
 }
@@ -159,7 +161,7 @@
   border-image-source: linear-gradient(-45deg, #098dff, #2cccff);
 } */
 
-/*---------------------------------------------------------------------------------*/
+/*--------------------- Custom v2 ---------------------*/
 
 .monaco-workbench
   .part.editor
@@ -167,8 +169,7 @@
   .editor-group-container
   > .title
   .tabs-container {
-  padding-top: 1px;
-  padding-left: 1px;
+  padding: 3px;
   gap: 3px;
 }
 .monaco-workbench
@@ -198,4 +199,33 @@
   background: linear-gradient(#21222c, #21222c) padding-box,
     linear-gradient(45deg, #fcb564, #ff65f2, #d66efd, #6a5af9, #2cccff, #20e3b2)
       border-box;
+}
+
+/*--------------------- Custom scrollbar ---------------------*/
+
+.editor-container .monaco-scrollable-element > .scrollbar > .slider {
+  height: 6px !important;
+  border-radius: 15px;
+  background: linear-gradient(
+    45deg,
+    rgb(252 181 100 / 12%),
+    rgb(255 101 242 / 12%),
+    rgb(214 110 253 / 12%),
+    rgb(106 90 249 / 12%),
+    rgb(44 204 255 / 12%),
+    rgb(32 227 178 / 12%)
+  );
+  cursor: pointer;
+  transition: background 0.15s ease-in-out;
+}
+.editor-container .monaco-scrollable-element > .scrollbar > .slider:hover {
+  background: linear-gradient(
+    45deg,
+    rgb(252 181 100 / 70%),
+    rgb(255 101 242 / 70%),
+    rgb(214 110 253 / 70%),
+    rgb(106 90 249 / 70%),
+    rgb(44 204 255 / 70%),
+    rgb(32 227 178 / 70%)
+  );
 }
