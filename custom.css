@@ -203,8 +203,7 @@
 
 /*--------------------- Custom scrollbar ---------------------*/
 
-.editor-container .monaco-scrollable-element > .scrollbar > .slider {
-  height: 6px !important;
+.monaco-scrollable-element > .scrollbar > .slider {
   border-radius: 15px;
   background: linear-gradient(
     45deg,
@@ -216,16 +215,25 @@
     rgb(32 227 178 / 12%)
   );
   cursor: pointer;
-  transition: background 0.15s ease-in-out;
 }
-.editor-container .monaco-scrollable-element > .scrollbar > .slider:hover {
+
+.monaco-scrollable-element > .scrollbar > .slider:hover {
   background: linear-gradient(
     45deg,
-    rgb(252 181 100 / 70%),
-    rgb(255 101 242 / 70%),
-    rgb(214 110 253 / 70%),
-    rgb(106 90 249 / 70%),
-    rgb(44 204 255 / 70%),
-    rgb(32 227 178 / 70%)
+    rgb(252 181 100 / 55%),
+    rgb(255 101 242 / 55%),
+    rgb(214 110 253 / 55%),
+    rgb(106 90 249 / 55%),
+    rgb(44 204 255 / 55%),
+    rgb(32 227 178 / 55%)
   );
+}
+
+.part.sidebar.left .monaco-scrollable-element > .scrollbar.vertical,
+.part.sidebar.left .monaco-scrollable-element > .scrollbar.vertical > .slider {
+  width: 6px !important;
+}
+
+.editor-container .monaco-scrollable-element > .scrollbar > .slider {
+  height: 6px !important;
 }
