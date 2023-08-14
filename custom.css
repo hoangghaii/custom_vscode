@@ -237,3 +237,12 @@
 .editor-container .monaco-scrollable-element > .scrollbar > .slider {
   height: 6px !important;
 }
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container {
+  gap: 0 !important;
+}
